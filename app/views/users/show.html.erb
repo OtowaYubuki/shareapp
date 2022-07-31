@@ -1,0 +1,12 @@
+<div id="account_edit">
+ <h2>アカウント編集</h2>
+  <p>メールアドレス</p>
+  <%= current_user.email %>
+  <p>パスワード</p>
+  <p>******</p>
+  <p>名前</p>
+  <%= current_user.name %>
+  <p>自己紹介</p>
+  <%= current_user.introduction %>
+  <button id ="user_edit_button"><%= link_to "編集", edit_user_registration_path %></button>
+ </div> 
