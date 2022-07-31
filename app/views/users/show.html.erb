@@ -1,20 +1,12 @@
-<div id="switchbox">
-    <input type="checkbox" id="label1" />
-    <label for="label1">+ アカウント</label>
-    <div>
-     <p>メールアドレス</p>
-     <%= current_user.email %>
-     <p>パスワード</p>
-     <p>******</p>
-     <button id ="user_edit_button"><%= link_to "編集", edit_user_registration_path %></button>
-    </div>
-    <input type="checkbox" id="label2" />
-    <label for="label2">+ プロフィール</label>
-    <div>
-     <p>名前</p>
-     <%= current_user.name %>
-     <p>自己紹介</p>
-     <%= current_user.introduction %>
-     <button id ="users_update_button"><%= link_to "編集", users_edit_path %></button>
-    </div>
-</div>
+<div id="account_edit">
+ <h2>アカウント編集</h2>
+  <p>メールアドレス</p>
+  <%= current_user.email %>
+  <p>パスワード</p>
+  <p>******</p>
+  <p>名前</p>
+  <%= current_user.name %>
+  <p>自己紹介</p>
+  <%= current_user.introduction %>
+  <button id ="user_edit_button"><%= link_to "編集", edit_user_registration_path %></button>
+ </div> 
